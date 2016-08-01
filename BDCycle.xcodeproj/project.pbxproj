@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71B7189811222E1B2F889DB0 /* libPods-BDCycle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C27C5ECF87E7C05EC4A27AB /* libPods-BDCycle.a */; };
 		C15CD9601D4EF6F2007B8DA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C15CD95F1D4EF6F2007B8DA4 /* main.m */; };
 		C15CD9631D4EF6F2007B8DA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15CD9621D4EF6F2007B8DA4 /* AppDelegate.m */; };
 		C15CD9661D4EF6F2007B8DA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15CD9651D4EF6F2007B8DA4 /* ViewController.m */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C27C5ECF87E7C05EC4A27AB /* libPods-BDCycle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BDCycle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8768FB3975B4D12C94F66ED6 /* Pods-BDCycle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDCycle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDCycle/Pods-BDCycle.debug.xcconfig"; sourceTree = "<group>"; };
+		BCB7630083C23828BEF4EF2F /* Pods-BDCycle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDCycle.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDCycle/Pods-BDCycle.release.xcconfig"; sourceTree = "<group>"; };
 		C15CD95B1D4EF6F2007B8DA4 /* BDCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15CD95F1D4EF6F2007B8DA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C15CD9611D4EF6F2007B8DA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B7189811222E1B2F889DB0 /* libPods-BDCycle.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A621B059D917918588C3A35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8768FB3975B4D12C94F66ED6 /* Pods-BDCycle.debug.xcconfig */,
+				BCB7630083C23828BEF4EF2F /* Pods-BDCycle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C15CD9521D4EF6F2007B8DA4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				C15CD9771D4EF6F3007B8DA4 /* BDCycleTests */,
 				C15CD9821D4EF6F3007B8DA4 /* BDCycleUITests */,
 				C15CD95C1D4EF6F2007B8DA4 /* Products */,
+				1A621B059D917918588C3A35 /* Pods */,
+				CE5F9B4DA4CA547604B711F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +156,14 @@
 			path = BDCycleUITests;
 			sourceTree = "<group>";
 		};
+		CE5F9B4DA4CA547604B711F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C27C5ECF87E7C05EC4A27AB /* libPods-BDCycle.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C15CD9881D4EF6F3007B8DA4 /* Build configuration list for PBXNativeTarget "BDCycle" */;
 			buildPhases = (
+				F583FBC29C62767EFEFC6881 /* 📦 Check Pods Manifest.lock */,
 				C15CD9571D4EF6F2007B8DA4 /* Sources */,
 				C15CD9581D4EF6F2007B8DA4 /* Frameworks */,
 				C15CD9591D4EF6F2007B8DA4 /* Resources */,
+				95C06630ED3EAFE72F76F007 /* 📦 Embed Pods Frameworks */,
+				C7025ED182842BA6E9A12867 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95C06630ED3EAFE72F76F007 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BDCycle/Pods-BDCycle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7025ED182842BA6E9A12867 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BDCycle/Pods-BDCycle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F583FBC29C62767EFEFC6881 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C15CD9571D4EF6F2007B8DA4 /* Sources */ = {
@@ -411,6 +486,7 @@
 		};
 		C15CD9891D4EF6F3007B8DA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8768FB3975B4D12C94F66ED6 /* Pods-BDCycle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BDCycle/Info.plist;
@@ -422,6 +498,7 @@
 		};
 		C15CD98A1D4EF6F3007B8DA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCB7630083C23828BEF4EF2F /* Pods-BDCycle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BDCycle/Info.plist;
@@ -496,6 +573,7 @@
 				C15CD98A1D4EF6F3007B8DA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C15CD98B1D4EF6F3007B8DA4 /* Build configuration list for PBXNativeTarget "BDCycleTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +582,7 @@
 				C15CD98D1D4EF6F3007B8DA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C15CD98E1D4EF6F3007B8DA4 /* Build configuration list for PBXNativeTarget "BDCycleUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +591,7 @@
 				C15CD9901D4EF6F3007B8DA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
