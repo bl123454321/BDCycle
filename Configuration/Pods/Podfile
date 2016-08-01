@@ -1,0 +1,58 @@
+
+source 'http://10.57.13.204/CocoaPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '7.0'
+link_with 'LeSports', 'LeSports_InHouse'
+
+#图片下载
+pod 'SDWebImage', '3.7.2'
+
+#加载动画
+pod 'MBProgressHUD', '0.9.1'
+
+#下啦刷新
+pod 'MJRefresh', '2.0.2'
+
+#autolayout 抽象
+pod 'PureLayout', '2.0.6'
+
+#信鸽
+pod 'XGPush', '2.3'
+
+#网络服务
+pod 'Reachability', '3.2'
+pod 'AFNetworking', '2.5.3'
+
+#播放器
+pod 'AJMediaPlayerKit', '0.9.4'
+
+
+#Analytics SDK
+pod 'ORAnalytics', '0.2.2'
+
+#动画
+pod 'pop', '1.0.7'
+
+pod 'SSKeychain', '1.2.3'
+
+#pod 'Masonry'
+pod 'JWCoverflowLayout', '~> 0.1.0' # add coverflow pod here --Kipp
+
+pod 'MJExtension', '2.4.4'
+
+#Sqlite3 操作
+#pod 'FMDB'
+# pod 'FMDB/FTS'   # FMDB with FTS
+# pod 'FMDB/standalone'   # FMDB with latest SQLite amalgamation source
+# pod 'FMDB/standalone/FTS'   # FMDB with latest SQLite amalgamation source and FTS
+# pod 'FMDB/SQLCipher'   # FMDB with SQLCipher
+
+#输入框跳转
+#pod 'XCDFormInputAccessoryView7', '~> 1.1.2'
+
+#加密工具
+#pod 'RNCryptor', '~>  2.2'
+
+
+
